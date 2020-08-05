@@ -1,0 +1,32 @@
+{
+  "name": "strapi-plugin-entreprenerd-stripe",
+  "version": "0.1.0",
+  "description": "Simple Plugin to Store Stripe Private Key and Use it to generate PaymentIntents",
+  "strapi": {
+    "name": "stripe",
+    "icon": "dollar-sign",
+    "description": "Simple Plugin to Store Stripe Private Key and Use it to generate PaymentIntents"
+  },
+  "dependencies": {
+    "@buffetjs/core": "^3.2.1",
+    "stripe": "^8.82.0",
+    "styled-components": "^5.1.1"
+  },
+  "author": {
+    "name": "Alex The Entreprenerd",
+    "email": "alex@entreprenerd.xyz",
+    "url": "https://www.youtube.com/c/AlextheEntreprenerd"
+  },
+  "maintainers": [
+    {
+      "name": "Alex The Entreprenerd",
+      "email": "alex@entreprenerd.xyz",
+      "url": "https://www.youtube.com/c/AlextheEntreprenerd"
+    }
+  ],
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
