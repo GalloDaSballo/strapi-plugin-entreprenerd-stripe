@@ -71,6 +71,9 @@ module.exports = {
 
   createPaymentIntent: async (ctx) => {
     let {amount} = ctx.request.body
+    let {payment_method_types}= ctx.request.body
+    let {currency}= ctx.request.body
+
     amount = parseInt(amount)
 
     if(isNaN(amount) || amount === 0){
@@ -89,7 +92,8 @@ module.exports = {
 
     const paymentIntent = await stripe.paymentIntents.create({
       amount,
-      currency: "usd"
+      payment_method_types,
+      currency
     })
 
     ctx.send({paymentIntent})
